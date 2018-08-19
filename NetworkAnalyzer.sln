@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkAnalyzer", "NetworkAnalyzer\NetworkAnalyzer.csproj", "{7F5EA5EF-36F1-4FAD-B15F-2EF5B5A35D41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetworkAnalyzer.Tests", "NetworkAnalyzer.Tests\NetworkAnalyzer.Tests.csproj", "{D5EF0BF3-4D49-4D08-A115-39025031A59C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F5EA5EF-36F1-4FAD-B15F-2EF5B5A35D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5EA5EF-36F1-4FAD-B15F-2EF5B5A35D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5EA5EF-36F1-4FAD-B15F-2EF5B5A35D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5EA5EF-36F1-4FAD-B15F-2EF5B5A35D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EF0BF3-4D49-4D08-A115-39025031A59C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EF0BF3-4D49-4D08-A115-39025031A59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EF0BF3-4D49-4D08-A115-39025031A59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EF0BF3-4D49-4D08-A115-39025031A59C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28305373-DE24-4D03-8112-3B503C74A1E9}
+	EndGlobalSection
+EndGlobal
