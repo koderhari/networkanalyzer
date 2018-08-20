@@ -28,7 +28,8 @@ namespace NetworkAnalyzer.Infrastructure
                         row++;
                         if (row == 1)
                             continue;
-                        var parts = line.Split(";",StringSplitOptions.RemoveEmptyEntries);
+                        if (string.IsNullOrEmpty(line)) continue;
+                        var parts = line.Split(separator, StringSplitOptions.RemoveEmptyEntries);
                         if (parts.Length != 2)
                             throw new InvalidOperationException("Wrong file format");
                         var node1 = GetOrAddNode(result ,parts[0]);

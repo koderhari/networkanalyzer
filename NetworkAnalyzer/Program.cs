@@ -25,6 +25,7 @@ namespace NetworkAnalyzer
             {
                 Console.WriteLine("Please input filename with nodes and press enter (or q for exit)");
                 var line = Console.ReadLine();
+                if (string.IsNullOrEmpty(line)) continue;
                 if (line.Trim().ToLowerInvariant() == "q")
                     break;
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -41,6 +42,7 @@ namespace NetworkAnalyzer
                 }
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Stop loading");
+                Console.ForegroundColor = ConsoleColor.White;
             }
         }
 

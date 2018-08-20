@@ -7,5 +7,7 @@ namespace NetworkAnalyzer.Infrastructure.Interfaces
     public interface INetworkAnalyzer
     {
         Network Analyze(string filePath);
+
+        bool IsHasManySegments(string filePath);
     }
 }

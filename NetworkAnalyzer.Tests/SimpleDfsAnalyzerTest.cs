@@ -3,20 +3,21 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static NetworkAnalyzer.Tests.TestEnvironment;
 
 namespace NetworkAnalyzer.Tests
 {
     [TestFixture]
     public class SimpleDfsAnalyzerTest
     {
-        private readonly string COUNTS_MUST_BE = "Count nodes must be {0}";
+       
 
         [Test]
         public void AnalyzeNetwork1Segment()
         {
             var fileParser = new FileParser();
             var analyzer = new SimpleDfsAnalyzer(fileParser);
-            var netWork = analyzer.Analyze(TestEnvironment.FILE_1SEGMENT);
+            var netWork = analyzer.Analyze(FILE_1SEGMENT);
 
             Assert.AreEqual(netWork.NetworkSegments.Count, 1, string.Format(COUNTS_MUST_BE,1));
         }
@@ -26,7 +27,7 @@ namespace NetworkAnalyzer.Tests
         {
             var fileParser = new FileParser();
             var analyzer = new SimpleDfsAnalyzer(fileParser);
-            var netWork = analyzer.Analyze(TestEnvironment.FILE_2SEGMENT);
+            var netWork = analyzer.Analyze(FILE_2SEGMENT);
             var segment1 = new string[] { "Node1","Node2","Node3" };
             var segment2 = new string[] { "Node4", "Node5"};
             var contentSegments = new Dictionary<int, string[]>
@@ -44,7 +45,7 @@ namespace NetworkAnalyzer.Tests
         {
             var fileParser = new FileParser();
             var analyzer = new SimpleDfsAnalyzer(fileParser);
-            var netWork = analyzer.Analyze(TestEnvironment.FILE_5SEGMENT);
+            var netWork = analyzer.Analyze(FILE_5SEGMENT);
             var segment1 = new string[] { "Node1", "Node2", "Node3" };
             var segment2 = new string[] { "Node4", "Node5" };
             var segment3 = new string[] { "Node6", "Node7", "Node8", "Node9"};
